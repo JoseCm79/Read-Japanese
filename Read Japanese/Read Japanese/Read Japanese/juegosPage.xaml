@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Read_Japanese.juegosPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#003333">
+            <Label x:Name="Letras" Text="Lista de practicas" TextColor="#bd701f" FontSize="30" FontFamily="Fuente" Margin="0,100,0,0"  HorizontalOptions="CenterAndExpand"></Label>
+            <Line BackgroundColor="Orange" Margin="50,10,40,20"  HeightRequest="5"></Line>
+            <Button Text="Escribe la letra" Margin="50,35,50,0" BorderColor="Black" BackgroundColor="#bd701f" Clicked="Button_Clicked" CornerRadius="15" FontFamily="Fuente"></Button>
+            <Button Text="Selección multiple" Margin="50,35,50,0" BorderColor="Black" BackgroundColor="#bd701f" Clicked="Button_Clicked_1" CornerRadius="15" FontFamily="Fuente"></Button>
+            <Button Text="Flash Cards" Margin="50,35,50,0" BorderColor="Black" BackgroundColor="#bd701f" Clicked="Button_Clicked_3"  CornerRadius="15" FontFamily="Fuente"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Read_Japanese.Page4">
+    <ContentPage.Content>
+        <ScrollView WidthRequest="2000">
+            <StackLayout BackgroundColor="#003333">
+                <ImageButton Source="info.png" BackgroundColor="#003333" WidthRequest="45" HeightRequest="45" HorizontalOptions="EndAndExpand" Margin="0,10,20,0" Clicked="ImageButton_Clicked"></ImageButton>
+                <Label Text="Hiragana" TextColor="#008080" FontFamily="Fuente" HorizontalOptions="CenterAndExpand" FontSize="30" Margin="0,0,0,20"></Label>
+                <Line BackgroundColor="#008080" Margin="50,10,40,20"  HeightRequest="5"></Line>
+                <Grid HorizontalOptions="CenterAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="«" Clicked="Button_Clicked" FontSize="30"  Grid.Row="1" Grid.Column="1" Margin="0,0,0,0" BackgroundColor="#008080" CornerRadius="30"></Button>
+                    <Image Source="page1.png" x:Name="Pagina" WidthRequest="100" Margin="5,0,5,0" Grid.Row="1" Grid.Column="2"></Image>
+                    <Button Text="»" Clicked="Button_Clicked_1" FontSize="30" Grid.Row="1" Grid.Column="3" BackgroundColor="#008080" CornerRadius="30" ></Button>
+                </Grid>
+                <Grid HorizontalOptions="CenterAndExpand" Padding="0,5,0,20" x:Name="tabla1" IsVisible="True">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="あ" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0"></Button>
+                    <Label Text="A" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="0"></Label>
+                    <Button Text="い" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="1"></Button>
+                    <Label Text="I" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="1"></Label>
+                    <Button Text="う" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="2"></Button>
+                    <Label Text="U" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="2"></Label>
+                    <Button Text="え" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="3"></Button>
+                    <Label Text="E" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="3"></Label>
+                    <Button Text="お" FontFamily="Fuente" FontSize="25" Margin="0,0,20,-25" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="4"></Button>
+                    <Label Text="O" FontFamily="Fuente" Margin="0,0,20,-25"  HorizontalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="4"></Label>
+
+                    <Button Text="か" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0"></Button>
+                    <Label Text="KA" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="0"></Label>
+                    <Button Text="き" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1"></Button>
+                    <Label Text="KI" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="1"></Label>
+                    <Button Text="く" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2"></Button>
+                    <Label Text="KU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="2"></Label>
+                    <Button Text="け" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="3"></Button>
+                    <Label Text="KE" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="3"></Label>
+                    <Button Text="こ" FontFamily="Fuente" FontSize="25" Margin="0,0,20,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="4"></Button>
+                    <Label Text="KO" FontFamily="Fuente" Margin="0,0,20,-25"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="4"></Label>
+
+                    <Button Text="さ" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="0"></Button>
+                    <Label Text="SA" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="0"></Label>
+                    <Button Text="し" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="1"></Button>
+                    <Label Text="SHI" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="1"></Label>
+                    <Button Text="す" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="2"></Button>
+                    <Label Text="SU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="2"></Label>
+                    <Button Text="せ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="3"></Button>
+                    <Label Text="SE" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="3"></Label>
+                    <Button Text="そ" FontFamily="Fuente" FontSize="25" Margin="0,0,20,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="4"></Button>
+                    <Label Text="SO" FontFamily="Fuente" Margin="0,0,20,-25"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="4"></Label>
+
+                    <Button Text="た" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="0"></Button>
+                    <Label Text="TA" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="8" Grid.Column="0"></Label>
+                    <Button Text="ち" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="1"></Button>
+                    <Label Text="CHI" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="8" Grid.Column="1"></Label>
+                    <Button Text="つ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="2"></Button>
+                    <Label Text="TSU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="8" Grid.Column="2"></Label>
+                    <Button Text="て" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="3"></Button>
+                    <Label Text="TE" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="8" Grid.Column="3"></Label>
+                    <Button Text="と" FontFamily="Fuente" FontSize="25" Margin="0,0,20,-25" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="4"></Button>
+                    <Label Text="TO" FontFamily="Fuente" Margin="0,0,20,-25"  HorizontalOptions="CenterAndExpand" Grid.Row="8" Grid.Column="4"></Label>
+
+                    <Button Text="な" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="9" Grid.Column="0"></Button>
+                    <Label Text="NA" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="10" Grid.Column="0"></Label>
+                    <Button Text="に" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="9" Grid.Column="1"></Button>
+                    <Label Text="NI" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="10" Grid.Column="1"></Label>
+                    <Button Text="ぬ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="9" Grid.Column="2"></Button>
+                    <Label Text="NU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="10" Grid.Column="2"></Label>
+                    <Button Text="ね" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="9" Grid.Column="3"></Button>
+                    <Label Text="NE" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="10" Grid.Column="3"></Label>
+                    <Button Text="の" FontFamily="Fuente" FontSize="25" Margin="0,0,20,-25" BackgroundColor="Transparent" Grid.Row="9" Grid.Column="4"></Button>
+                    <Label Text="NO" FontFamily="Fuente" Margin="0,0,20,-25"  HorizontalOptions="CenterAndExpand" Grid.Row="10" Grid.Column="4"></Label>
+
+                    <Button Text="は" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="0"></Button>
+                    <Label Text="HA/WA" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="0"></Label>
+                    <Button Text="ひ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="1"></Button>
+                    <Label Text="HI" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="1"></Label>
+                    <Button Text="ふ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="2"></Button>
+                    <Label Text="FU/HU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="2"></Label>
+                    <Button Text="へ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="3"></Button>
+                    <Label Text="HE/E" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="3"></Label>
+                    <Button Text="ほ" FontFamily="Fuente" FontSize="25" Margin="0,0,20,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="4"></Button>
+                    <Label Text="HO" FontFamily="Fuente" Margin="0,0,20,-25"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="4"></Label>
+
+                    <Button Text="ま" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="0"></Button>
+                    <Label Text="MA" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="0"></Label>
+                    <Button Text="み" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="1"></Button>
+                    <Label Text="MI" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="1"></Label>
+                    <Button Text="む" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="2"></Button>
+                    <Label Text="MU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="2"></Label>
+                    <Button Text="め" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="3"></Button>
+                    <Label Text="ME" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="3"></Label>
+                    <Button Text="も" FontFamily="Fuente" FontSize="25" Margin="0,0,20,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="4"></Button>
+                    <Label Text="MO" FontFamily="Fuente" Margin="0,0,20,-25"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="4"></Label>
+
+                    <Button Text="や" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="15" Grid.Column="0"></Button>
+                    <Label Text="YA" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="16" Grid.Column="0"></Label>
+                    <Button Text="ゆ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="15" Grid.Column="1"></Button>
+                    <Label Text="YU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="16" Grid.Column="1"></Label>
+                    <Button Text="よ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="15" Grid.Column="2"></Button>
+                    <Label Text="YO" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="16" Grid.Column="2"></Label>
+
+                    <Button Text="ら" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="17" Grid.Column="0"></Button>
+                    <Label Text="RA" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="18" Grid.Column="0"></Label>
+                    <Button Text="り" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="17" Grid.Column="1"></Button>
+                    <Label Text="RI" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="18" Grid.Column="1"></Label>
+                    <Button Text="る" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="17" Grid.Column="2"></Button>
+                    <Label Text="RU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="18" Grid.Column="2"></Label>
+                    <Button Text="れ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="17" Grid.Column="3"></Button>
+                    <Label Text="RE" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="18" Grid.Column="3"></Label>
+                    <Button Text="ろ" FontFamily="Fuente" FontSize="25" Margin="0,0,20,-25" BackgroundColor="Transparent" Grid.Row="17" Grid.Column="4"></Button>
+                    <Label Text="RO" FontFamily="Fuente" Margin="0,0,20,-25"  HorizontalOptions="CenterAndExpand" Grid.Row="18" Grid.Column="4"></Label>
+
+                    <Button Text="わ" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="19" Grid.Column="0"></Button>
+                    <Label Text="WA" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="20" Grid.Column="0"></Label>
+                    <Button Text="を" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="19" Grid.Column="1"></Button>
+                    <Label Text="WO" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="20" Grid.Column="1"></Label>
+                    <Button Text="ん" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="19" Grid.Column="2"></Button>
+                    <Label Text="N" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="20" Grid.Column="2"></Label>
+                </Grid>
+
+                <Grid HorizontalOptions="CenterAndExpand" Margin="0,15,0,0" x:Name="tabla2" IsVisible="False" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="が" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0"></Button>
+                    <Label Text="GA" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="0"></Label>
+                    <Button Text="ぎ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1"></Button>
+                    <Label Text="GI" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="1"></Label>
+                    <Button Text="ぐ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2"></Button>
+                    <Label Text="GU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="2"></Label>
+                    <Button Text="げ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="3"></Button>
+                    <Label Text="GE" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="3"></Label>
+                    <Button Text="ご" FontFamily="Fuente"  FontSize="25" Margin="0,0,20,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="4"></Button>
+                    <Label Text="GO" FontFamily="Fuente" Margin="0,0,20,-25"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="4"></Label>
+
+                    <Button Text="ざ" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="0"></Button>
+                    <Label Text="ZA" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="0"></Label>
+                    <Button Text="じ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="1"></Button>
+                    <Label Text="JI" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="1"></Label>
+                    <Button Text="ず" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="2"></Button>
+                    <Label Text="ZU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="2"></Label>
+                    <Button Text="ぜ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="3"></Button>
+                    <Label Text="ZE" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="3"></Label>
+                    <Button Text="ぞ" FontFamily="Fuente" FontSize="25" Margin="0,0,20,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="4"></Button>
+                    <Label Text="ZO" FontFamily="Fuente" Margin="0,0,20,-25"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="4"></Label>
+
+                    <Button Text="だ" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="0"></Button>
+                    <Label Text="DA" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="8" Grid.Column="0"></Label>
+                    <Button Text="ぢ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="1"></Button>
+                    <Label Text="JI" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="8" Grid.Column="1"></Label>
+                    <Button Text="づ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="2"></Button>
+                    <Label Text="ZU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="8" Grid.Column="2"></Label>
+                    <Button Text="で" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="3"></Button>
+                    <Label Text="DE" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="8" Grid.Column="3"></Label>
+                    <Button Text="ど" FontFamily="Fuente" FontSize="25" Margin="0,0,20,-25" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="4"></Button>
+                    <Label Text="DO" FontFamily="Fuente" Margin="0,0,20,-25"  HorizontalOptions="CenterAndExpand" Grid.Row="8" Grid.Column="4"></Label>
+
+                    <Button Text="ば" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="0"></Button>
+                    <Label Text="BA" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="0"></Label>
+                    <Button Text="び" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="1"></Button>
+                    <Label Text="BI" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="1"></Label>
+                    <Button Text="ぶ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="2"></Button>
+                    <Label Text="BU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="2"></Label>
+                    <Button Text="べ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="3"></Button>
+                    <Label Text="BE" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="3"></Label>
+                    <Button Text="ぼ" FontFamily="Fuente" FontSize="25" Margin="0,0,20,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="4"></Button>
+                    <Label Text="BO" FontFamily="Fuente" Margin="0,0,20,-25"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="4"></Label>
+
+                    <Button Text="ぱ" FontFamily="Fuente" FontSize="25" Margin="20,0,0,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="0"></Button>
+                    <Label Text="PA" FontFamily="Fuente" Margin="15,0,0,0"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="0"></Label>
+                    <Button Text="ぴ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="1"></Button>
+                    <Label Text="PI" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="1"></Label>
+                    <Button Text="ぷ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="2"></Button>
+                    <Label Text="PU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="2"></Label>
+                    <Button Text="ぺ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="3"></Button>
+                    <Label Text="PE" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="3"></Label>
+                    <Button Text="ぽ" FontFamily="Fuente" FontSize="25" Margin="0,0,20,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="4"></Button>
+                    <Label Text="PO" FontFamily="Fuente" Margin="0,0,20,-25"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="4"></Label>
+                </Grid>
+
+                <Grid HorizontalOptions="CenterAndExpand" Margin="0,5,0,0" x:Name="tabla3" IsVisible="False">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="きや" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1"></Button>
+                    <Label Text="KYA" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="1"></Label>
+                    <Button Text="きゆ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2"></Button>
+                    <Label Text="KYU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="2"></Label>
+                    <Button Text="きよ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="3"></Button>
+                    <Label Text="KYO" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="3"></Label>
+
+
+                    <Button Text="しや" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="1"></Button>
+                    <Label Text="SHA" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="1"></Label>
+                    <Button Text="しゆ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="2"></Button>
+                    <Label Text="SHU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="2"></Label>
+                    <Button Text="しよ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="3"></Button>
+                    <Label Text="SHO" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="3"></Label>
+
+                    <Button Text="ちや" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="1"></Button>
+                    <Label Text="CHA" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="8" Grid.Column="1"></Label>
+                    <Button Text="ちゆ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="2"></Button>
+                    <Label Text="CHU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="8" Grid.Column="2"></Label>
+                    <Button Text="ちよ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="3"></Button>
+                    <Label Text="CHO" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="8" Grid.Column="3"></Label>
+
+                    <Button Text="にや" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="9" Grid.Column="1"></Button>
+                    <Label Text="NYA" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="10" Grid.Column="1"></Label>
+                    <Button Text="にゆ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="9" Grid.Column="2"></Button>
+                    <Label Text="NYU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="10" Grid.Column="2"></Label>
+                    <Button Text="によ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="9" Grid.Column="3"></Button>
+                    <Label Text="NYO" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="10" Grid.Column="3"></Label>
+
+                    <Button Text="ひや" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="1"></Button>
+                    <Label Text="HYA" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="1"></Label>
+                    <Button Text="ひゆ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="2"></Button>
+                    <Label Text="HYU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="2"></Label>
+                    <Button Text="ひよ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="3"></Button>
+                    <Label Text="HYO" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="3"></Label>
+
+                    <Button Text="みや" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="1"></Button>
+                    <Label Text="MYA" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="1"></Label>
+                    <Button Text="みゆ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="2"></Button>
+                    <Label Text="MYU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="2"></Label>
+                    <Button Text="みよ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="3"></Button>
+                    <Label Text="MYO" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="3"></Label>
+
+                    <Button Text="りや" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="17" Grid.Column="1"></Button>
+                    <Label Text="RYA" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="18" Grid.Column="1"></Label>
+                    <Button Text="りゆ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="17" Grid.Column="2"></Button>
+                    <Label Text="RYU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="18" Grid.Column="2"></Label>
+                    <Button Text="りよ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="17" Grid.Column="3"></Button>
+                    <Label Text="RYO" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="18" Grid.Column="3"></Label>
+                </Grid>
+
+                <Grid HorizontalOptions="CenterAndExpand" Margin="0,15,0,0" x:Name="tabla4" IsVisible="False" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="ぎや" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1"></Button>
+                    <Label Text="GYA" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="1"></Label>
+                    <Button Text="ぎゆ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2"></Button>
+                    <Label Text="GYU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="2"></Label>
+                    <Button Text="ぎよ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="3"></Button>
+                    <Label Text="GYO" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="3"></Label>
+
+                    <Button Text="じや" FontFamily="Fuente" FontSize="25" Margin="0,20,0,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="1"></Button>
+                    <Label Text="JA" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="1"></Label>
+                    <Button Text="じゆ" FontFamily="Fuente" FontSize="25" Margin="0,20,0,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="2"></Button>
+                    <Label Text="JU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="2"></Label>
+                    <Button Text="じよ" FontFamily="Fuente" FontSize="25" Margin="0,20,0,-25" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="3"></Button>
+                    <Label Text="JO" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="6" Grid.Column="3"></Label>
+
+                    <Button Text="びや" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="1"></Button>
+                    <Label Text="BYA" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="1"></Label>
+                    <Button Text="びゆ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="2"></Button>
+                    <Label Text="BYU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="2"></Label>
+                    <Button Text="びよ" FontFamily="Fuente" FontSize="25" Margin="0,0,0,-25" BackgroundColor="Transparent" Grid.Row="11" Grid.Column="3"></Button>
+                    <Label Text="BYO" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="12" Grid.Column="3"></Label>
+
+                    <Button Text="ぴや" FontFamily="Fuente" FontSize="25" Margin="0,20,0,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="1"></Button>
+                    <Label Text="PYA" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="1"></Label>
+                    <Button Text="ぴゆ" FontFamily="Fuente" FontSize="25" Margin="0,20,0,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="2"></Button>
+                    <Label Text="PYU" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="2"></Label>
+                    <Button Text="ぴよ" FontFamily="Fuente" FontSize="25" Margin="0,20,0,-25" BackgroundColor="Transparent" Grid.Row="13" Grid.Column="3"></Button>
+                    <Label Text="PYO" FontFamily="Fuente"  HorizontalOptions="CenterAndExpand" Grid.Row="14" Grid.Column="3"></Label>
+
+                </Grid>
+                <Frame x:Name="FrameSalva" BackgroundColor="#003333" VerticalOptions="EndAndExpand" IsVisible="False"></Frame>
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

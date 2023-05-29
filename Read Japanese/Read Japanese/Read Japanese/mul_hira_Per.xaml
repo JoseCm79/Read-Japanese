@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Read_Japanese.mul_hira_Per">
+
+    <ContentPage.Content >
+        <ScrollView
+        HeightRequest="2000"
+            BackgroundColor="#003e93">
+            <StackLayout BackgroundColor="#003333">
+                <Label Text="Seleccione las filas de hiraganas que desees practicar" HorizontalTextAlignment="Center" FontFamily="Fuente" FontSize="20" Margin="50,50,50,20" TextColor="#008080" ></Label>
+                <Line BackgroundColor="#1affff" Margin="50,0,40,20"  HeightRequest="5"></Line>
+
+
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.2"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Letras principales" HorizontalTextAlignment="Center" FontFamily="Fuente" TextColor="#008080" FontSize="20" Grid.Row="0" Grid.Column="1"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxV" Grid.Row="1" Grid.Column="1" IsChecked="False"/>
+                    <Label Text="あ い う え お" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="1" Grid.Row="1"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxK" Grid.Row="2" Grid.Column="1" IsChecked="False"/>
+                    <Label Text="か き く け こ" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="1" Grid.Row="2"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxS" Grid.Row="3" Grid.Column="1" IsChecked="False"/>
+                    <Label Text="さ し す せ そ" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="1" Grid.Row="3"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxT" Grid.Row="4" Grid.Column="1" IsChecked="False"/>
+                    <Label Text="た ち つ て と" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="1" Grid.Row="4"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxN" Grid.Row="5" Grid.Column="1" IsChecked="False"/>
+                    <Label Text="な に ぬ ね の" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="1" Grid.Row="5"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxH" Grid.Row="6" Grid.Column="1" IsChecked="False" />
+                    <Label Text="は ひ ふ へ ほ" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="1" Grid.Row="6"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxM" Grid.Row="7" Grid.Column="1" IsChecked="False"/>
+                    <Label Text="ま み む め も" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="1" Grid.Row="7"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxY" Grid.Row="8" Grid.Column="1" IsChecked="False"/>
+                    <Label Text="や ゆ よ" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="1" Grid.Row="8"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxR" Grid.Row="9" Grid.Column="1" IsChecked="False" />
+                    <Label Text="ら り る れ　ろ" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="1" Grid.Row="9" ></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxW" Grid.Row="10" Grid.Column="1" IsChecked="False" />
+                    <Label Text="わ を ん" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="1" Grid.Row="10"></Label>
+                    <Label Text="" x:Name="talvez" HorizontalTextAlignment="Center" TextColor="#008080" FontSize="20" FontFamily="Fuente" Grid.Row="11" Grid.Column="1"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxKr" Grid.Row="12" Grid.Column="1" IsChecked="False"/>
+                    <Label Text="が   ぎ   ぐ   げ   ご" TextColor="white" FontSize="19" FontFamily="Fuente" Margin="45,5,0,0" Grid.Column="1"  Grid.Row="12"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxSr" Grid.Row="13" Grid.Column="1" IsChecked="False"/>
+                    <Label Text="ざ   じ   ず   ぜ   ぞ" TextColor="white" FontSize="19" FontFamily="Fuente" Margin="45,5,0,0" Grid.Column="1"  Grid.Row="13"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxTr" Grid.Row="14" Grid.Column="1" IsChecked="False"/>
+                    <Label Text="だ   ぢ  づ   で   ど" TextColor="white" FontSize="19" FontFamily="Fuente" Margin="45,5,0,0" Grid.Column="1"  Grid.Row="14"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxHRr" Grid.Row="15" Grid.Column="1" IsChecked="False"/>
+                    <Label Text="ば   び   ぶ   べ  ぼ" TextColor="white" FontSize="19" FontFamily="Fuente" Margin="42,5,0,0" Grid.Column="1"  Grid.Row="15"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxHr" Grid.Row="16" Grid.Column="1" IsChecked="False" />
+                    <Label Text="ぱ   ぴ   ぷ   ぺ   ぽ" TextColor="white" FontSize="19" FontFamily="Fuente" Margin="45,5,0,0" Grid.Column="1"  Grid.Row="16"></Label>
+
+
+
+                    <Label Text="Combinaciones con la Y" TextColor="#008080" FontSize="20" HorizontalTextAlignment="Center" FontFamily="Fuente" Grid.Row="0" Grid.Column="2"></Label>
+
+                    <CheckBox Color="	#1affff" x:Name="checkBoxKy" Grid.Row="1" Grid.Column="2" IsChecked="False"/>
+                    <Label Text="きや きゆ きよ " TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="2" Grid.Row="1"></Label>
+                    <CheckBox  Color="	#1affff" x:Name="checkBoxSy" Grid.Row="2" Grid.Column="2" IsChecked="False"/>
+                    <Label Text="しや　しゆ　しよ　" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="2" Grid.Row="2"></Label>
+                    <CheckBox  Color="	#1affff" x:Name="checkBoxTy" Grid.Row="3" Grid.Column="2" IsChecked="False"/>
+                    <Label Text="ちや　ちゆ　ちよ　" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="2" Grid.Row="3"></Label>
+                    <CheckBox  Color="	#1affff" x:Name="checkBoxNy" Grid.Row="4" Grid.Column="2" IsChecked="False"/>
+                    <Label Text="にや　にゆ　によ　" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="2" Grid.Row="4"></Label>
+                    <CheckBox Color="	#1affff" x:Name="checkBoxHy" Grid.Row="5" Grid.Column="2" IsChecked="False" />
+                    <Label Text="ひや　ひゆ　ひよ　" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="2" Grid.Row="5"></Label>
+                    <CheckBox  Color="	#1affff" x:Name="checkBoxMy" Grid.Row="6" Grid.Column="2" IsChecked="False"/>
+                    <Label Text="みや　みゆ　みよ　" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="2" Grid.Row="6"></Label>
+                    <CheckBox  Color="	#1affff" x:Name="checkBoxRy" Grid.Row="7" Grid.Column="2" IsChecked="False" />
+                    <Label Text="りや　りゆ　りよ　" TextColor="white" FontSize="19" Margin="35,5,0,0" Grid.Column="2" Grid.Row="7" ></Label>
+
+
+                    <Label Text="Dakuten y Handakuten con combinaciones con la Y" TextColor="#008080" FontSize="18" HorizontalTextAlignment="Center" FontFamily="Fuente" Grid.Row="11" Grid.Column="2"></Label>
+
+                    <CheckBox  Color="	#1affff" x:Name="checkBoxKry" Grid.Row="12" Grid.Column="2" IsChecked="False"/>
+                    <Label Text="ぎや　ぎゆ　ぎよ　" TextColor="white" FontSize="19" FontFamily="Fuente" Margin="45,5,0,0" Grid.Column="2"  Grid.Row="12"></Label>
+                    <CheckBox  Color="	#1affff" x:Name="checkBoxSry" Grid.Row="13" Grid.Column="2" IsChecked="False"/>
+                    <Label Text="じや　じゆ　じよ　" TextColor="white" FontSize="19" FontFamily="Fuente" Margin="45,5,0,0" Grid.Column="2"  Grid.Row="13"></Label>
+                    <CheckBox  Color="	#1affff" x:Name="checkBoxHRry" Grid.Row="14" Grid.Column="2" IsChecked="False"/>
+                    <Label Text="びや　びゆ　びよ　" TextColor="white" FontSize="19" FontFamily="Fuente" Margin="42,5,0,0" Grid.Column="2"  Grid.Row="14"></Label>
+                    <CheckBox  Color="	#1affff" x:Name="checkBoxHry" Grid.Row="15" Grid.Column="2" IsChecked="False" />
+                    <Label Text="ぴや　ぴゆ　ぴよ　" TextColor="white" FontSize="19" FontFamily="Fuente" Margin="45,5,0,0" Grid.Column="2"  Grid.Row="15"></Label>
+                    <Button Text="Empezar examén" Margin="50,0,50,0" BorderColor="Black" BackgroundColor="#008080" Grid.Column="1" Grid.ColumnSpan="2"  Grid.Row="21" Clicked="Button_Clicked" CornerRadius="15" FontFamily="Fuente"></Button>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

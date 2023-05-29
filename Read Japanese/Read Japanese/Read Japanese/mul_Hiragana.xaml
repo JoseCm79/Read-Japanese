@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Read_Japanese.mul_Hiragana">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#003333">
+            <Label Text="Selección multiple (HIRAGANA)" Margin="20,20,0,0" FontSize="20" FontFamily="Fuente"></Label>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Source="check" WidthRequest="30" Grid.Row="1" Grid.Column="1"></Image>
+                <Image Source="close" WidthRequest="20" Grid.Row="2" Grid.Column="1"></Image>
+                <Label Grid.Row="1" Grid.Column="2"  Text=": " FontFamily="FuenteJ" Margin="0,0,0,0" FontSize="18" TextColor="black"></Label>
+                <Label Grid.Row="2" Grid.Column="2"  Text=":  " FontFamily="FuenteJ" Margin="0,0,0,0" FontSize="18" TextColor="black"></Label>
+                <Label Grid.Row="1" Grid.Column="3" x:Name="Buena" Text=" 0" FontFamily="FuenteJ" Margin="0,0,0,0" FontSize="18" TextColor="LightGreen"></Label>
+                <Label Grid.Row="2" Grid.Column="3" x:Name="Mala" Text=" 0" FontFamily="FuenteJ" Margin="0,0,0,0" FontSize="18" TextColor="red"></Label>
+            </Grid>
+            <Label x:Name="Hiragana" TextColor="#1affff" Text="あ" FontSize="200" HorizontalOptions="CenterAndExpand" Margin="0,-10,0,30" FontFamily="FuenteJ"></Label>
+            
+            <Grid HorizontalOptions="CenterAndExpand" Margin="60,30,80,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" ></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid HorizontalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" ></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="Opcion1" Clicked="Opcion1_Clicked"  Text="Si" HeightRequest="60" WidthRequest="125"  Grid.Row="1" Grid.Column="1" Margin="0,0,0,10" BorderWidth="2" BorderColor="Black" BackgroundColor="#008080" CornerRadius="15" FontFamily="Fuente"></Button>
+                    <Button x:Name="Opcion2" Text="Si" Clicked="Opcion2_Clicked" HeightRequest="60" Grid.Row="2" Grid.Column="1" BorderWidth="2" BorderColor="Black" BackgroundColor="#008080" CornerRadius="15" FontFamily="Fuente"></Button>
+                    
+                </Grid>
+                <Grid HorizontalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" ></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="Opcion3" Clicked="Opcion3_Clicked" Text="Si" HeightRequest="60" WidthRequest="150"  Grid.Row="1" Grid.Column="1" Margin="0,0,0,10" BorderWidth="2" BorderColor="Black" BackgroundColor="#008080" CornerRadius="15" FontFamily="Fuente"></Button>
+                    <Button x:Name="Opcion4"    Clicked="Opcion4_Clicked" Text="Si" HeightRequest="60" Grid.Row="2" Grid.Column="1" BorderWidth="2" BorderColor="Black" BackgroundColor="#008080" CornerRadius="15" FontFamily="Fuente"></Button>
+
+                </Grid>
+            </Grid>
+            
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Read_Japanese.Page3">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#003333">
+            <Label Text="Escribe la letra (HIRAGANA)" Margin="20,10,0,0" FontSize="25" FontFamily="Fuente"></Label>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Source="check" WidthRequest="30" Grid.Row="1" Grid.Column="1"></Image>
+                <Image Source="close" WidthRequest="20" Grid.Row="2" Grid.Column="1"></Image>
+                <Label Grid.Row="1" Grid.Column="2"  Text=": " FontFamily="FuenteJ" Margin="0,0,0,0" FontSize="18" TextColor="black"></Label>
+                <Label Grid.Row="2" Grid.Column="2"  Text=":  " FontFamily="FuenteJ" Margin="0,0,0,0" FontSize="18" TextColor="black"></Label>
+                <Label Grid.Row="1" Grid.Column="3" x:Name="Buena" Text=" 0" FontFamily="FuenteJ" Margin="0,0,0,0" FontSize="18" TextColor="LightGreen"></Label>
+                <Label Grid.Row="2" Grid.Column="3" x:Name="Mala" Text=" 0" FontFamily="FuenteJ" Margin="0,0,0,0" FontSize="18" TextColor="red"></Label>
+            </Grid>
+            <Label x:Name="Hiragana" Text="" FontFamily="FuenteJ" TextColor="#1affff"  FontSize="200" HorizontalOptions="CenterAndExpand"  Margin="0,10,0,0"></Label>
+            <Entry x:Name="RespuestaHi" Completed="RespuestaHi_Completed" Placeholder="Escribe tu respuesta" PlaceholderColor="White"  FontFamily="Fuente" TextColor="white" Margin="100,10,100,0" HorizontalTextAlignment="Center"></Entry>
+            <Button Text="Comprobar" Clicked="Button_Clicked" CornerRadius="20" Margin="50,0,50,0" FontFamily="Fuente" BackgroundColor="#008080"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

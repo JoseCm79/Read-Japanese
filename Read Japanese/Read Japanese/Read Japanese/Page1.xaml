@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Read_Japanese.Page1">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#003333" >
+            <ImageButton Source="info.png" BackgroundColor="#003333" WidthRequest="45" HeightRequest="45" HorizontalOptions="EndAndExpand" Margin="0,10,20,0" Clicked="ImageButton_Clicked"></ImageButton>
+            <Image Source="si.png" HeightRequest="325"></Image>
+            <Button Text="Practicas" Margin="50,45,50,0" BorderWidth="2" BorderColor="Black" BackgroundColor="#008080" Clicked="Button_Clicked" CornerRadius="15" FontFamily="Fuente"></Button>
+            <Button Text="Silabario Hiragana" Margin="50,45,50,0" BorderWidth="2" BorderColor="Black" BackgroundColor="#008080" Clicked="Button_Clicked_2" CornerRadius="15" FontFamily="Fuente"></Button>
+            <Button Text="Silabario katakana" Margin="50,45,50,0" BorderWidth="2" BorderColor="Black" BackgroundColor="#008080" Clicked="Button_Clicked_3" CornerRadius="15" FontFamily="Fuente"></Button>
+            <Label Text="" x:Name="Contador"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

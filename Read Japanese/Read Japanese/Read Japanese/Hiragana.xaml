@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<popup:PopupPage 
+ xmlns="http://xamarin.com/schemas/2014/forms"
+ xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ x:Class="Read_Japanese.Hiragana">
+    <StackLayout HorizontalOptions="Center"
+        VerticalOptions="Center" Margin="20" Spacing="0">
+
+        <Frame BackgroundColor="Black" CornerRadius="15" HasShadow="True" BorderColor="Gray">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="190"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label FontFamily="Fuente" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20" Text="Historia y uso del Hiragana" Margin="0,0,0,0"></Label>
+                <Line HeightRequest="5" Grid.Row="1" BackgroundColor="#004d4d" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,0,20"></Line>
+                <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text='El hiragana es un alfabeto conformado por silabas, con  letras curvas y simples, se usa en palabras nativas o  partículas, el dakuten (゛) y el  handakuten(゜) sirven para darle otro sentido fonético a la silaba, es una simplificación de un alfabeto chino antiguo, anteriormente llamado onnade, "mano de mujer" por que al inicio fue solo para las mujeres.' FontFamily="Fuente"></Label>
+                <Button Text="Gracias :D" FontFamily="Fuente" Grid.Row="3" HorizontalOptions="CenterAndExpand" Grid.Column="2" BackgroundColor="Black" Clicked="Button_Clicked"></Button>
+            </Grid>
+        </Frame>
+
+    </StackLayout>
+</popup:PopupPage>

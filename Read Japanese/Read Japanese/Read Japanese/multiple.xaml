@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<popup:PopupPage 
+ xmlns="http://xamarin.com/schemas/2014/forms"
+ xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ x:Class="Read_Japanese.multiple">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="20" Spacing="0">
+        <Frame BackgroundColor="Black" CornerRadius="15" HasShadow="True" BorderColor="Gray">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label FontFamily="Fuente" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20" Text="Selección multiple" Margin="10,0,0,0"></Label>
+                <Line HeightRequest="5" Grid.Row="2" BackgroundColor="#004d4d" Grid.Column="1" Grid.ColumnSpan="2" Margin="10,0,20,20"></Line>
+                <Button Text="Hiragana" WidthRequest="150" Grid.Row="3" Grid.Column="1"  BorderColor="Black" BackgroundColor="#008080" Clicked="Button_Clicked_1" CornerRadius="15" FontFamily="Fuente"></Button>
+                <Button Text="Katakana"  Grid.Row="3" Grid.Column="2"  BorderColor="Black" BackgroundColor="#cc0000" Clicked="Button_Clicked_2" CornerRadius="15" FontFamily="Fuente"></Button>
+                <Button Text="Salir" WidthRequest="100" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" BackgroundColor="Black" Clicked="Button_Clicked" FontFamily="Fuente"></Button>
+            </Grid>
+        </Frame>
+    </StackLayout>
+</popup:PopupPage>

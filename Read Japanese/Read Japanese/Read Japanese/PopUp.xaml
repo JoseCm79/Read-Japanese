@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<popup:PopupPage
+xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="Read_Japanese.PopUp">
+    <StackLayout HorizontalOptions="Center"
+        VerticalOptions="Center" Margin="20" Spacing="0">
+        
+        <Frame BackgroundColor="Black" CornerRadius="15" HasShadow="True" BorderColor="Gray">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="230"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label FontFamily="Fuente" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20" Text="Información" Margin="0,0,0,0"></Label>
+                <Line HeightRequest="5" Grid.Row="1" BackgroundColor="#004d4d" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,0,20"></Line>
+                <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="Esta es una aplicación hecha para aprender y memorizar los 2 silabarios (una alfabetización con formada con silabas parecido a nuestro alfabeto), principales del japonés como son el katakana y hiragana aquí podrás encontrar diferentes maneras de memorizar los silabarios anteriormente mencionados tomando en cuenta la idea de que todos aprendemos de una manera diferente. Espero que te guste :D." FontFamily="Fuente"></Label>
+                <Button Text="No ver otra vez" FontFamily="Fuente" Grid.Row="3" Grid.Column="1" BackgroundColor="Black" Clicked="Button_Clicked"></Button>
+                <Button Text="Gracias :D" FontFamily="Fuente" Grid.Row="3" Grid.Column="2" BackgroundColor="Black" Clicked="Button_Clicked_1"></Button>
+            </Grid>
+        </Frame>
+
+    </StackLayout>
+</popup:PopupPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<popup:PopupPage 
+ xmlns="http://xamarin.com/schemas/2014/forms"
+ xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ x:Class="Read_Japanese.Incorrecta">
+    <StackLayout HorizontalOptions="Center"
+        VerticalOptions="Center" Margin="20" Spacing="0">
+
+        <Frame BackgroundColor="Black" CornerRadius="15" HasShadow="True"  BorderColor="Gray">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="110"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="La respuesta es:" FontSize="20" FontFamily="Fuente" Grid.Row="1" Grid.Column="1"></Label>
+                <Label Text="Incorrecta" TextColor="Red" HorizontalTextAlignment="Center" Margin="0,30,0,0" FontSize="30" FontFamily="Fuente" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"></Label>
+                <Label x:Name="label" Text="La respuesta correcta es:" Margin="0,30,0,0" VerticalOptions="EndAndExpand" FontSize="15" FontFamily="Fuente" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"></Label>
+            </Grid>
+        </Frame>
+
+    </StackLayout>
+</popup:PopupPage>

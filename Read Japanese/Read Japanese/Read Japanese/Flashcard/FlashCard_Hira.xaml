@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Read_Japanese.Flashcard.FlashCard_Hira">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#003333">
+            
+            <Label Text="Flash Cards" Margin="20,10,0,50" FontSize="25" FontFamily="Fuente"></Label>
+            <Label  x:Name="PronunJP" TextTransform="Uppercase" Text=""  FontFamily="Fuente" TextColor="#1affff" HorizontalOptions="CenterAndExpand" FontSize="20"></Label>
+            <Frame BackgroundColor="#004d4d" Margin="70,10,70,30" CornerRadius="15" HasShadow="True" >
+                <Label  x:Name="LetraJP" Text=""  FontFamily="FuenteJ" TextColor="#1affff" HorizontalOptions="CenterAndExpand" FontSize="105"></Label>
+            </Frame>
+            <Grid x:Name="Botones1"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+                <Button Text="Mostrar la respuesta" CornerRadius="20" Grid.Row="1" Grid.Column="1" Margin="20,30,5,0" Clicked="Button_Clicked" FontFamily="Fuente" BackgroundColor="#008080"></Button>
+                <Button Text="Siguiente" CornerRadius="20" Grid.Row="1" Grid.Column="2" Margin="15,30,20,0" Clicked="Button_Clicked_1" FontFamily="Fuente" BackgroundColor="#008080"></Button>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
